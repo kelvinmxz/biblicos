@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Paz de Deus — Evangelho de Mateus | Jovens e Menores CCB</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="theme-dusk">
+  <!-- Plano de fundo dinâmico com as 3 fotos reais da Comum Congregação -->
+  <div class="bg-stage" aria-hidden="true">
+    <div id="bg-layer-a" class="bg-layer is-visible"></div>
+    <div id="bg-layer-b" class="bg-layer"></div>
+    <div class="bg-scrim"></div>
+  </div>
+
+  <!-- Cabeçalho Principal com Saudação Oficial -->
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="brand-block" id="brand-home" role="button" tabindex="0" title="Voltar ao início">
+        <div class="brand-emblem">
+          <span data-icon="church" data-icon-class="icon-lg"></span>
+        </div>
+        <div class="brand-texts">
+          <h1 class="brand-greeting">A Paz de Deus</h1>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="stat-pill" title="Pontuação acumulada">
+          <span data-icon="trophy" data-icon-class="icon-sm"></span>
+          <span class="stat-label">Pontos:</span>
+          <strong id="hud-score">0</strong>
+        </div>
+
+        <div class="stat-pill streak-pill" title="Sequência de acertos">
+          <span data-icon="flame" data-icon-class="icon-sm"></span>
+          <span class="stat-label">Sequência:</span>
+          <strong id="hud-streak">0</strong>
+        </div>
+
+        <button type="button" id="btn-bg-cycle" class="icon-btn" title="Alternar foto da Comum no fundo">
+          <span id="bg-cycle-icon" data-icon="sun" data-icon-class="icon-sm"></span>
+          <span id="bg-cycle-label" class="btn-hide-mobile">Fundo: Auto</span>
+        </button>
+
+        <button type="button" id="btn-sound-toggle" class="icon-btn" title="Ativar ou silenciar efeitos sonoros" aria-pressed="true">
+          <span id="sound-icon" data-icon="volume-2" data-icon-class="icon-sm"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra de Navegação entre Dinâmicas -->
+    <nav class="main-nav" aria-label="Dinâmicas e Estudos">
+      <button type="button" class="nav-tab is-active" data-view="home">
+        <span data-icon="home" data-icon-class="icon-sm"></span>
+        <span>Início</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="quiz">
+        <span data-icon="help-circle" data-icon-class="icon-sm"></span>
+        <span>Quiz da Palavra</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="character">
+        <span data-icon="user" data-icon-class="icon-sm"></span>
+        <span>Quem Sou Eu?</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="word">
+        <span data-icon="timer" data-icon-class="icon-sm"></span>
+        <span>Acerte a Palavra</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="tf">
+        <span data-icon="zap" data-icon-class="icon-sm"></span>
+        <span>Verdadeiro ou Falso</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="timeline">
+        <span data-icon="map" data-icon-class="icon-sm"></span>
+        <span>Linha do Tempo</span>
+      </button>
+      <button type="button" class="nav-tab" data-view="study">
+        <span data-icon="book-open" data-icon-class="icon-sm"></span>
+        <span>Estudo &amp; 28 Capítulos</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal Dinâmico -->
+  <main class="app-main">
+    <div id="app-stage" class="app-stage">
+      <!-- Renderizado dinamicamente por app.js -->
+    </div>
+  </main>
+
+  <!-- Rodapé Discreto -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <span class="footer-verse">
+        <span data-icon="book" data-icon-class="icon-xs"></span>
+        <span>&ldquo;E eis que estou convosco todos os dias, até à consumação dos séculos.&rdquo; &mdash; Mateus 28:20</span>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Scripts Locais (Sem dependências externas) -->
+  <script src="assets/icons/icons.js"></script>
+  <script src="assets/js/sound.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
